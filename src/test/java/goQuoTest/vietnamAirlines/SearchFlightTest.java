@@ -35,11 +35,12 @@ public class SearchFlightTest extends Base {
 	@Test
 	public void test() throws InterruptedException {
 		homePage.selectReturnTicket();
+
 		homePage.selectDepartCity();
 		homePage.selectHanoiAirport();
 		homePage.selectHoChiMinhAirport();
 		homePage.selectCheckInDate("31");
-		homePage.selectCheckOutDate("19");
+
 		homePage.selectNumberOfAdults(3);
 		homePage.selectNumberOfChildren(1);
 		homePage.search();
